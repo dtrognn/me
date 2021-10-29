@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fff;
+    --text: ;
+    --desc: rgb(107, 103, 103);
+}
+
+body {
+    font-size: 62.5%;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    transition: background .3s linear;
+}
+
+body.dark{
+    background-color: #555151;
+}
+
+container.dark {
+    background-color: #555151;
+}
+
+container.dark p {
+    background-color: var(--primary);
+}
+
+body.dark p {
+    background-color: var(--primary);
+}
+
+.main {
+    /* position: relative; */
+    /* background-color: rgb(255, 254, 254); */
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: var(--primary);
+    margin: 140px auto;
+    align: center;
+}
+
+.container--style {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container--avt {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.container--avt-icon-back {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container--avt-icon-back:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.container-avt--image {
+    background-image: url(./img/avt.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    transition: transform .2s;
+    border: 3px solid var(--primary);
+}
+
+.container-avt--image:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.container--avt-darkmode {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container--avt-darkmode:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.icon-style {
+    padding: 7px;
+    color: rgb(1, 1, 2);
+    font-size: 15px;
+}
+
+                /* DARK MODE */
+.checkbox:checked + .label .ball {
+    transform: translate(24px);
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.label {
+    width: 46px;
+    height: 22px;
+    background-color: #2b2b2b;
+    border-radius: 50px;
+    display: flex;
+    align: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+.fa-moon {
+    color: rgb(236, 176, 9);
+    font-size: 13px;
+}
+
+.fa-sun {
+    color: rgb(236, 176, 9);
+    font-size: 13px;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s linear;
+}
+
+/* NAME */
+.container--name {
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.name {
+    font-size: 1.2rem;
+    padding-bottom: 7px;
+}
+
+.desc {
+    font-size: 1rem;
+    color: var(--desc);
+}
+
+/* CONTACT   */
+.container--contact {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.container--contact-fb {
+    /* padding-left: px; */
+    color: rgb(9, 111, 194);
+}
+
+.container--contact-ig {
+    color: rgb(226, 98, 98);
+}
+
+.container--contact-tiktok {
+
+}
+
+.container--contact-git {
+
+}
+
+.contact-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    padding: 8.5px;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: var(--primary);
+}
+
+/* BUTTON */
+button a {
+    text-decoration: none;
+}
+
+.container--button {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    background-color: var(--primary);
+    text-align: center;
+    border: none;
+    color: rgb(9, 10, 10);
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: var(--primary);
+}
+
+/* SOCIAL */
+.container--social {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color:var(--desc);
+}
+
+.social {
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--desc);
+}
